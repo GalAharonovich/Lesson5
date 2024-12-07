@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון המרה</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <div class="Header">
+            <p class="heading">מחשבון המרה</p>
+        </div>
+        <div class="calculator">
+            <div class="inside-calculator">
+                <p class="headline1">כמות השקלים</p>
+                <input type="number" class="input-number" id="inputMoney">
+            </div>
+            <div class="inside-calculator">
+                <p class="headline2">סוג המטבע</p>
+                <div class="custom-select" style="width:200px;">
+                    <select class="inside-select" id="selectCurrency">
+                        <option value="0">בחרו מטבע</option>
+                        <option value="1">דולר</option>
+                        <option value="2">יורו</option>
+                        <option value="3">לירה סטרלינג</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inside-calculator">
+                <button class="button-calculator" id="buttonSelect" onclick="calc()">בחר</button>
+            </div>
+            <div class="inside-calculator">
+                <div id="change">
+                <p class="headline3">סוגי מטבעות</p>
+                <p>יורו = 4.1 ש"ח</p>
+                <p>דולר = 3.8 ש"ח</p>
+                <p>לירה סטרלינג = 5.1 ש"ח</p>
+                </div>
+            </div>
+            <div class="inside-calculator" id="result"> הסכום שבחרת להמיר הוא:
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.heading{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.headline1{
+    width: 70%;
+    direction: rtl;
+    font-weight: bold;
+
+}
+
+.headline2{
+    width: 40%;
+    direction: rtl;
+    font-weight: bold;
+}
+
+.headline3{
+    font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-number {
+    background-color: rgb(6, 145, 245);
+    width: 68.5%;
+    height: 30px;
+    direction: rtl;
+}
+
+.calculator {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+#change{
+    direction: rtl;
+    width: 40%;
+}
+
+.inside-calculator {
+    width: 40%;
+    margin: 20px;
+
+}
+
+#result{
+direction: rtl;
+
+}
+
+.button-calculator {
+    background-color: rgb(6, 145, 245);
+    width: 70%;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+
+
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+    width: 70%;
+
+
+}
+
+.inside-select {
+    direction: rtl;
+    background-color: rgb(6, 145, 245);
+    width: 100%;
+    height: 30px;
+
+}
+
+
+.select-selected {
+    background-color: DodgerBlue;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+}
+
+.select-items {
+    position: absolute;
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
