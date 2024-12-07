@@ -1,4 +1,6 @@
 
+// task currency calculator
+
 function calc() {
     const selectCurrency = document.getElementById("selectCurrency").value;
     const inputMoney = document.getElementById("inputMoney").value;
